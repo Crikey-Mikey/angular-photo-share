@@ -13,12 +13,11 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 @import "bower_components/bootswatch/cosmo/_variables.scss";
-$brand-primary:   #2780E3;
-$brand-success:   #3FB618;
-$brand-info:      #9954BB;
-$brand-warning:   #FF7518;
-$brand-danger:    #FF0039;
-
+$brand-primary:         #2780E3;
+$brand-success:         #3FB618;
+$brand-info:            #9954BB;
+$brand-warning:         #FF7518;
+$brand-danger:          #FF0039;
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/bootswatch/cosmo/_bootswatch.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
