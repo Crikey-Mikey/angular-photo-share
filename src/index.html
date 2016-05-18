@@ -24,7 +24,27 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ui-view></div>
+    <nav class="navbar navbar-static-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="home()">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collaspse-6">
+                <ul class="nav navbar-nav">
+                    <li ng-if="authenticated" class="active"><a ui-sref="groupIndex()">
+                        <i class="fa fa-users"></i> Groups</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-if="authenticated"><a class="navbar-link" href="#" ng-click="logout()"><i class="fa fa-power-off"></i>
+                            Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div ui-view class="container"></div>
+
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
