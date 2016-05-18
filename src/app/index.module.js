@@ -1,7 +1,13 @@
 (function() {
   'use strict';
-
-  angular
-    .module('angularPhotoShare', ['ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ui.bootstrap', 'toastr']);
-
+  angular.module('groupselfie', [
+    'ngSanitize',
+    'ngMessages',
+    'ngAria',
+    'ui.router',
+    'ui.bootstrap',
+    'toastr',
+    'formio',
+    'ngFormioHelper'
+  ]);
 })();
